@@ -1,0 +1,54 @@
+{
+  "name": "backend-raspberypi-inspiramed",
+  "version": "1.0.0",
+  "description": "Backend to receive data from arduino and send to frontend in real time",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server.js",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "test": "jest --watchAll",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdaison/backend.git"
+  },
+  "keywords": [
+    "express",
+    "arduino",
+    "socketio",
+    "inspiramed",
+    "ventilator"
+  ],
+  "author": "jdaison@hotmail.com",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/innspiraMED/backend/issues"
+  },
+  "homepage": "https://github.com/innspiraMED/backend#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "jest": "^25.1.0",
+    "jsdoc": "^3.6.3",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-mocks-http": "^1.8.1",
+    "serialport": "^8.0.7",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^4.1.1"
+  }
+}
